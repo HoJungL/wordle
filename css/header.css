@@ -1,0 +1,18 @@
+.menu-bar__icons {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.menu-bar__icons_bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  padding-left: 10px;
+  margin-bottom: -30px;
+}
+.menu-bar__icons img {
+  width: 30px;
+  margin-right: 10px;
+}
