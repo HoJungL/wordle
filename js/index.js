@@ -90,8 +90,8 @@ function appStart() {
     function setTime() {
       const nowTime = new Date();
       const passedTime = new Date(nowTime - startTime);
-      const min = passedTime.getMinutes().toString.padStart(2, "0");
-      const sec = passedTime.getSeconds().toString.padStart(2, "0");
+      const min = passedTime.getMinutes().toString().padStart(2, "0");
+      const sec = passedTime.getSeconds().toString().padStart(2, "0");
       const timeDiv = document.querySelector("#timer");
       timeDiv.innerText = `${min}:${sec}`;
     }
