@@ -5,7 +5,7 @@
 // 4. 게임 종료 판단
 // 5. 추가로 상단에 게임 시간 표시하기
 
-const answer = "APPLE";
+const answer = "STUDY";
 let index = 0; // 수정가능한 녀석이죵
 let attempts = 0; // 시도 횟수
 
