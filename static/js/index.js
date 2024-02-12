@@ -5,7 +5,6 @@
 // 4. 게임 종료 판단
 // 5. 추가로 상단에 게임 시간 표시하기
 
-const answer = "STUDY";
 let index = 0; // 수정가능한 녀석이죵
 let attempts = 0; // 시도 횟수
 
@@ -36,12 +35,18 @@ function appStart() {
   };
 
   // 엔터 입력하기
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     let trueCount = 0;
+
+    // 서버에서 정답을 받아오는 코드
+    const response = await fetch("/answer");
+    const answer = await response.json();
+
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
         `.board-block[data-index='${attempts}${i}']`
       );
+
       const inputText = block.innerText;
       const answerText = answer[i];
       if (inputText === answerText) {
